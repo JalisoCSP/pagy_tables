@@ -1,12 +1,20 @@
-<table class="table table-striped">
+PagyTable => <%= style_options %>
+<table class="<%= style_options[:pagy_table_style] %>">
   <thead>
-    <th class="">Head 1</th>
-    <th class="">Head 2</th>
-    <th class="">Head 3</th>
+    <th class="<%= style_options[:pagy_table_th_style] %>">Head 1</th>
+    <th class="<%= style_options[:pagy_table_th_style] %>">Head 2</th>
+    <th class="<%= style_options[:pagy_table_th_style] %>">Head 3</th>
   <thead>
   <tbody>
-    <td>TD1</td>
-    <td>TD2</td>
-    <td>TD3</td>
+    <tr class="<%= style_options[:pagy_table_tr_style] %>">
+      <td class="<%= style_options[:pagy_table_td_style] %>">TD1</td>
+      <td class="<%= style_options[:pagy_table_td_style] %>">TD2</td>
+      <td class="<%= style_options[:pagy_table_td_style] %>">TD3</td>
+    </tr>
+    <tr class="<%= style_options[:pagy_table_tr_style] %>">
+      <td class="<%= style_options[:pagy_table_td_style] %>">TD1</td>
+      <td class="<%= style_options[:pagy_table_td_style] %>">TD2</td>
+      <td class="<%= style_options[:pagy_table_td_style] %>">TD3</td>
+    </tr>
   </tbody>
 </table>
