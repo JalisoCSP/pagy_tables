@@ -1,20 +1,22 @@
-PagyTable => <%= style_options %>
+<h1>Examples</h1>
+<small><strong>style_options</strong>: <%= style_options %></small>
+<hr />
 <table class="<%= style_options[:pagy_table_style] %>">
   <thead>
-    <th class="<%= style_options[:pagy_table_th_style] %>">Head 1</th>
-    <th class="<%= style_options[:pagy_table_th_style] %>">Head 2</th>
-    <th class="<%= style_options[:pagy_table_th_style] %>">Head 3</th>
+    <th class="<%= style_options[:pagy_table_th_style] %>">Title</th>
+    <th class="<%= style_options[:pagy_table_th_style] %>">Content</th>
+    <th class="<%= style_options[:pagy_table_th_style] %>">Another</th>
+    <th class="<%= style_options[:pagy_table_th_style] %>">Extras</th>
   <thead>
   <tbody>
-    <tr class="<%= style_options[:pagy_table_tr_style] %>">
-      <td class="<%= style_options[:pagy_table_td_style] %>">TD1</td>
-      <td class="<%= style_options[:pagy_table_td_style] %>">TD2</td>
-      <td class="<%= style_options[:pagy_table_td_style] %>">TD3</td>
-    </tr>
-    <tr class="<%= style_options[:pagy_table_tr_style] %>">
-      <td class="<%= style_options[:pagy_table_td_style] %>">TD1</td>
-      <td class="<%= style_options[:pagy_table_td_style] %>">TD2</td>
-      <td class="<%= style_options[:pagy_table_td_style] %>">TD3</td>
-    </tr>
+    <% @examples.each do |example| %>
+      <tr class="<%= style_options[:pagy_table_tr_style] %>">
+        <td class="<%= style_options[:pagy_table_td_style] %>"><%= example.title %></td>
+        <td class="<%= style_options[:pagy_table_td_style] %>"><%= example.content %></td>
+        <td class="<%= style_options[:pagy_table_td_style] %>"><%= example.another %></td>
+        <td class="<%= style_options[:pagy_table_td_style] %>"><%= example.extras %></td>
+      </tr>
+    <% end %>
   </tbody>
 </table>
+<%== pagy_nav(@pagy) %>
