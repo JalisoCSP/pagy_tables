@@ -1,9 +1,29 @@
 # PagyTables
-Short description and motivation.
+Table are a consistent pain point in any application. I want to make them simpler.
+
+Pagination: Pagy -> https://github.com/ddnexus/pagy
+
+Ordering:
+
+Exporting
+
+Customisation:
+
+These are ordering, searching, exporting and customisation.
+
+Writing this, I realise that there might be other gems that handle the extras...
+
+## Contact
+
+@JalisoCSP on Twitter
+
 
 ## Usage
-How to use my plugin.
+WIP, need to lay out plan before continuation
 
+- Setup Pagy
+
+<!--
 ## Installation
 Add this line to your application's Gemfile:
 
@@ -20,6 +40,7 @@ Or install it yourself as:
 ```bash
 $ gem install pagy_tables
 ```
+-->
 
 ## Contributing
 Contribution directions go here.
