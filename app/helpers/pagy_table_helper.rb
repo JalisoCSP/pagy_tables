@@ -7,7 +7,7 @@ module PagyTableHelper
   private
 
   def pagy_tables_default_options
-    { pagy_table_style: "pagy_table_style",
+    { pagy_table_style: "table table-strip table-hover",
       pagy_table_tr_style: "pagy_table_tr_style",
       pagy_table_th_style: "pagy_table_th_style",
       pagy_table_td_style: "pagy_table_td_style"

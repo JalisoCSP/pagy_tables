@@ -1,13 +1,12 @@
 <h1>Examples</h1>
 <small><strong>style_options</strong>: <%= style_options %></small>
-<hr />
 <table class="<%= style_options[:pagy_table_style] %>">
   <thead>
     <th class="<%= style_options[:pagy_table_th_style] %>">Title</th>
     <th class="<%= style_options[:pagy_table_th_style] %>">Content</th>
     <th class="<%= style_options[:pagy_table_th_style] %>">Another</th>
     <th class="<%= style_options[:pagy_table_th_style] %>">Extras</th>
-  <thead>
+  </thead>
   <tbody>
     <% @examples.each do |example| %>
       <tr class="<%= style_options[:pagy_table_tr_style] %>">
