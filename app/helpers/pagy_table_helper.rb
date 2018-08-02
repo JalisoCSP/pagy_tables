@@ -1,5 +1,5 @@
 module PagyTableHelper
-  def generate_pagy_table(style_options = {})
+  def pagy_table(style_options = {})
     render "/pagy_tables/table.html.erb",
       style_options: pagy_tables_default_options.merge(style_options)
   end
